@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tushar Sharma | Portfolio</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #ffecd2, #fcb69f);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      margin-bottom: 15px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      font-size: 18px;
+      opacity: 0.9;
+    }
+
+    nav {
+      margin-top: 20px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 18px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffde59;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section h2 {
+      margin-bottom: 30px;
+      color: #6a11cb;
+      text-align: center;
+      font-size: 30px;
+    }
+
+    /* About */
+    .about {
+      background: #fff;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+      margin-bottom: 50px;
+      text-align: center;
+    }
+
+    .about p {
+      font-size: 17px;
+      margin-bottom: 15px;
+    }
+
+    .skills {
+      margin-top: 20px;
+      text-align: left;
+    }
+
+    .skill {
+      margin-bottom: 18px;
+    }
+
+    .skill span {
+      font-weight: bold;
+    }
+
+    .progress {
+      background: #eee;
+      border-radius: 20px;
+      overflow: hidden;
+      height: 14px;
+      margin-top: 6px;
+    }
+
+    .progress-bar {
+      height: 14px;
+      background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    }
+
+    /* Projects */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .project-card {
+      background: #fff;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .project-card h3 {
+      margin-bottom: 12px;
+      color: #2575fc;
+    }
+
+    /* Contact */
+    .contact {
+      background: #fff;
+      padding: 35px;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+      text-align: center;
+    }
+
+    .contact p {
+      margin-bottom: 12px;
+      font-size: 16px;
+    }
+
+    .contact a {
+      color: #6a11cb;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 18px;
+      background: #333;
+      color: #fff;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://via.placeholder.com/130" alt="Profile Photo">
+    <h1>Tushar Sharma</h1>
+    <p>Web Developer | C++ Learner | Tech Enthusiast</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm Tushar, a passionate student currently learning <b>C++</b> and preparing for a good internship in it. Alongside, I’m upgrading myself in <b>Web Development</b> and exploring modern technologies.</p>
+    <p>My ultimate goal is to become a <b>Software Developer</b> 🚀.</p>
+    
+    <div class="skills">
+      <div class="skill">
+        <span>HTML & CSS</span>
+        <div class="progress"><div class="progress-bar" style="width: 90%;"></div></div>
+      </div>
+      <div class="skill">
+        <span>C++</span>
+        <div class="progress"><div class="progress-bar" style="width: 75%;"></div></div>
+      </div>
+      <div class="skill">
+        <span>JavaScript</span>
+        <div class="progress"><div class="progress-bar" style="width: 70%;"></div></div>
+      </div>
+      <div class="skill">
+        <span>Python</span>
+        <div class="progress"><div class="progress-bar" style="width: 60%;"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>A modern personal website built with HTML & CSS to showcase my skills and projects.</p>
+      </div>
+      <div class="project-card">
+        <h3>Student Info Form</h3>
+        <p>A responsive form built for collecting student details, styled with modern CSS.</p>
+      </div>
+      <div class="project-card">
+        <h3>Coming Soon...</h3>
+        <p>More exciting projects will be added here as I continue learning and growing!</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:tushar@example.com">tushar@example.com</a></p>
+    <p>GitHub: <a href="https://github.com/TusharSharma2005" target="_blank">github.com/TusharSharma2005</a></p>
+    <p>LinkedIn: <a href="#">linkedin.com/in/tusharsharma</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Tushar Sharma | Made with ❤ using HTML & CSS</p>
+  </footer>
+</body>
+</html>
+
